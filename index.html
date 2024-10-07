@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        overflow: hidden;
+        width: 600px;
+      }
+      .left-container {
+        padding: 20px;
+        text-align: center;
+        background: #ec9cc2;
+        color: rgb(238, 111, 111);
+        flex: 0 0 200px; /* Fixed width for left container */
+      }
+      .left-container img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      .right-container {
+        padding: 20px;
+        flex: 1;
+      }
+      .gradienttext {
+        background: linear-gradient(to right, #6158b1, #9d9fe5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="left-container">
+        <img src="https://thumbs.dreamstime.com/b/woman-profile-icon-circle-shape-gray-background-252967540.jpg" alt="Profile Image" />
+        <h1 class="gradienttext">Kajoori Paskaran</h1>
+        <h3>Student in DBIT</h3>
+      </div>
+      <div class="right-container">
+        <h2 class="gradienttext">Profile Details</h2>
+        <h3>Name: Kajoori</h3>
+        <h3>Age:22</h3>
+        <h3>Address:j/308 Jaffna </h3>
+
+        <h3>Email: kajoorip23@gmail.com</h3>
+        <br>
+        <h3>About Myself:</h3>
+        <hr>
+        <p>
+          I am a student.i have completed my Advanced level.Now i am studing Web development at DBIT.My hobbies are Listening to music and garding.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
